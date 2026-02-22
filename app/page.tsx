@@ -21,13 +21,12 @@ export default function WardenReHome() {
           WardenRe
         </div>
         <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-          <a href="#" className="hover:text-white transition-colors">Platform</a>
+          <a href="#features" className="hover:text-white transition-colors">Platform</a>
           <a href="/pricing" className="hover:text-white transition-colors">Enterprise</a>
-          <a href="#" className="hover:text-white transition-colors">Resources</a>
         </div>
-        <button className="px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-slate-200 transition-all">
+        <a href="mailto:support@wardenre.com?subject=WardenRe%20Demo%20Request" className="px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-slate-200 transition-all flex items-center justify-center">
           Book Demo
-        </button>
+        </a>
       </nav>
 
       {/* Hero Section */}
@@ -56,18 +55,18 @@ export default function WardenReHome() {
             Automated legal takedowns and real-time perimeter protection.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-cyan-500 text-black font-bold rounded-xl hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all">
-              Start Free Trial
-            </button>
-            <button className="px-8 py-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all backdrop-blur-sm">
-              View Documentation
-            </button>
+            <a href="/pricing" className="px-8 py-4 bg-cyan-500 text-black font-bold rounded-xl hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all flex items-center justify-center">
+              View Pricing
+            </a>
+            <a href="mailto:support@wardenre.com?subject=Early%20Access%20Inquiry" className="px-8 py-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all backdrop-blur-sm flex items-center justify-center">
+              Contact Sales
+            </a>
           </div>
         </motion.div>
       </section>
 
       {/* Features Grid */}
-      <section className="max-w-7xl mx-auto px-8 pb-32">
+      <section id="features" className="max-w-7xl mx-auto px-8 pb-32">
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { icon: <Search className="text-cyan-400" />, title: "Deep Scan AI", desc: "Our neural engine monitors the dark web and surface web in real-time." },
@@ -90,6 +89,22 @@ export default function WardenReHome() {
           ))}
         </div>
       </section>
+
+      {/* Contact Footer */}
+      <footer className="border-t border-white/10 pt-12 mt-12 mb-12 text-center">
+        <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
+          <h4 className="text-xl font-bold text-white mb-2">Deploy WardenRe For Your Organization</h4>
+          <p className="text-slate-400 mb-6">We are currently onboarding enterprise clients for our early-access rollout.</p>
+          <div className="flex flex-col md:flex-row gap-8 text-sm font-medium text-slate-300">
+            <div className="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10 hover:border-cyan-500/50 transition-colors">
+              <span className="text-cyan-400">✉️</span> support@wardenre.com
+            </div>
+            <div className="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10 hover:border-cyan-500/50 transition-colors">
+              <span className="text-cyan-400">📞</span> +1 (888) 390-9736
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
