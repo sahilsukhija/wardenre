@@ -36,11 +36,11 @@ export default function WardenReHome() {
             Next-Gen Identity Defense
           </span>
           
-          {/* THE NEW PATENT BADGE */}
+          {/* THE NEW PROPRIETARY BADGE */}
           <div className="mb-8">
             <span className="px-4 py-2 rounded-md bg-white/10 text-white text-sm font-bold tracking-wide border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] inline-flex items-center gap-2">
               <Shield size={14} className="text-cyan-400" />
-              Protected by Patented Deepfake Neutralization Technology
+              Protected by Proprietary Deepfake Neutralization Technology
             </span>
           </div>
 
@@ -90,21 +90,27 @@ export default function WardenReHome() {
         </div>
       </section>
 
+      {/* Leadership Section */}
+      <section className="py-20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto text-center px-8">
+          <h3 className="text-2xl font-bold mb-6">Leadership</h3>
+          <p className="text-slate-400 mb-8 max-w-2xl mx-auto">
+            WardenRe is spearheaded by experts in digital trust, safety infrastructure, and active threat neutralization.
+          </p>
+          <div className="inline-flex items-center gap-6 bg-white/5 px-8 py-5 rounded-2xl border border-white/10 hover:border-cyan-500/30 transition-colors">
+            <div className="text-left">
+              <p className="text-white font-bold text-lg">Yugam Sukhija</p>
+              <p className="text-slate-400 text-sm">Founder & CEO</p>
+            </div>
+            <a href="https://www.linkedin.com/in/yugamsukhija" target="_blank" rel="noopener noreferrer" className="ml-4 px-5 py-2 bg-cyan-500 text-black rounded-lg text-sm font-bold hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Footer */}
       <footer className="border-t border-white/10 pt-12 mt-12 mb-12 text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
           <h4 className="text-xl font-bold text-white mb-2">Deploy WardenRe For Your Organization</h4>
-          <p className="text-slate-400 mb-6">We are currently onboarding enterprise clients for our early-access rollout.</p>
-          <div className="flex flex-col md:flex-row gap-8 text-sm font-medium text-slate-300">
-            <div className="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10 hover:border-cyan-500/50 transition-colors">
-              <span className="text-cyan-400">✉️</span> support@wardenre.com
-            </div>
-            <div className="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10 hover:border-cyan-500/50 transition-colors">
-              <span className="text-cyan-400">📞</span> +1 (888) 390-9736
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+          <p className="text-slate-400 mb-6">We are currently onboarding enterprise clients for our early-
