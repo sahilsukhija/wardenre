@@ -21,9 +21,9 @@ export default function ProfessionalPricing() {
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {[
-          { name: "Families", price: "1", icon: <Shield className="text-cyan-400" />, features: ["Weekly Dark Web Scans", "Automated C&D Generation", "4 Connected Devices"] },
-          { name: "Creators", price: "5", icon: <Zap className="text-blue-400" />, features: ["Daily Identity Scans", "Global Takedown Service", "Social Media Monitoring"], highlight: true },
-          { name: "Executives", price: "9", icon: <Crown className="text-purple-400" />, features: ["Real-time Threat Alerts", "Direct Attorney Access", "Deep Recon Reports"] }
+          { name: "Creators", price: "29", icon: <Zap className="text-blue-400" />, features: ["Weekly Deepfake Scans", "Automated C&D Generation", "Social Media Monitoring"] },
+          { name: "Executives", price: "99", icon: <Crown className="text-purple-400" />, features: ["Daily Identity Scans", "Global Takedown Service", "Priority Threat Alerts"], highlight: true },
+          { name: "Enterprise", price: "Custom", icon: <Shield className="text-cyan-400" />, features: ["Real-time Dark Web Ops", "Direct Attorney Access", "API Integration"] }
         ].map((plan, i) => (
           <motion.div 
             key={i}
@@ -35,8 +35,14 @@ export default function ProfessionalPricing() {
             <div className="mb-8">{plan.icon}</div>
             <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
             <div className="flex items-baseline gap-1 mb-8">
-              <span className="text-4xl font-bold">${plan.price}</span>
-              <span className="text-slate-500">/week</span>
+              {plan.price === "Custom" ? (
+                <span className="text-4xl font-bold">Custom</span>
+              ) : (
+                <>
+                  <span className="text-4xl font-bold">${plan.price}</span>
+                  <span className="text-slate-500">/month</span>
+                </>
+              )}
             </div>
             <ul className="space-y-4 mb-10 flex-grow">
               {plan.features.map((f, j) => (
@@ -45,8 +51,8 @@ export default function ProfessionalPricing() {
                 </li>
               ))}
             </ul>
-            <button className={`w-full py-4 rounded-2xl font-bold transition-all ${plan.highlight ? 'bg-cyan-500 text-black hover:shadow-glow' : 'bg-white/5 hover:bg-white/10'}`}>
-              Select Plan
+            <button className={`w-full py-4 rounded-2xl font-bold transition-all ${plan.highlight ? 'bg-cyan-500 text-black hover:shadow-[0_0_15px_rgba(6,182,212,0.4)]' : 'bg-white/5 hover:bg-white/10'}`}>
+              {plan.price === "Custom" ? "Contact Sales" : "Select Plan"}
             </button>
           </motion.div>
         ))}
