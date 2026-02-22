@@ -33,9 +33,18 @@ export default function WardenReHome() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-8 py-32 text-center">
         <motion.div {...fadeIn}>
-          <span className="px-4 py-1.5 rounded-full border border-cyan-500/20 bg-cyan-500/5 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-8 inline-block">
+          <span className="px-4 py-1.5 rounded-full border border-cyan-500/20 bg-cyan-500/5 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-4 inline-block">
             Next-Gen Identity Defense
           </span>
+          
+          {/* THE NEW PATENT BADGE */}
+          <div className="mb-8">
+            <span className="px-4 py-2 rounded-md bg-white/10 text-white text-sm font-bold tracking-wide border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] inline-flex items-center gap-2">
+              <Shield size={14} className="text-cyan-400" />
+              Protected by Patented Deepfake Neutralization Technology
+            </span>
+          </div>
+
           <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
             The Digital Fortress for <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-500">
@@ -84,5 +93,3 @@ export default function WardenReHome() {
     </div>
   );
 }
-// Refreshing build
-// Vercel Root Force Build: Tue Feb 17 13:52:56 EST 2026
