@@ -90,7 +90,7 @@ export default function WardenReHome() {
         </div>
       </section>
 
-      {/* Leadership Section */}
+      {/* Leadership Section - NO LINKEDIN */}
       <section className="py-20 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center px-8">
           <h3 className="text-2xl font-bold mb-6">Leadership</h3>
@@ -98,13 +98,10 @@ export default function WardenReHome() {
             WardenRe is spearheaded by experts in digital trust, safety infrastructure, and active threat neutralization.
           </p>
           <div className="inline-flex items-center gap-6 bg-white/5 px-8 py-5 rounded-2xl border border-white/10 hover:border-cyan-500/30 transition-colors">
-            <div className="text-left">
+            <div className="text-center">
               <p className="text-white font-bold text-lg">Yugam Sukhija</p>
               <p className="text-slate-400 text-sm">Founder & CEO</p>
             </div>
-            <a href="https://www.linkedin.com/in/yugamsukhija" target="_blank" rel="noopener noreferrer" className="ml-4 px-5 py-2 bg-cyan-500 text-black rounded-lg text-sm font-bold hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all">
-              LinkedIn
-            </a>
           </div>
         </div>
       </section>
