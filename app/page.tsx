@@ -1,6 +1,6 @@
 "use client";
 
-import WaitlistForm from '@/components/WaitlistForm';
+import WaitlistForm from '../components/WaitlistForm';
 import React from 'react';
 import { Shield, Lock, Search, Zap, Globe, Menu } from 'lucide-react';
 import { motion } from 'framer-motion';
