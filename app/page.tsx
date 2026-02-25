@@ -1,4 +1,6 @@
 "use client";
+
+import WaitlistForm from '@/components/WaitlistForm';
 import React from 'react';
 import { Shield, Lock, Search, Zap, Globe, Menu } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -24,8 +26,8 @@ export default function WardenReHome() {
           <a href="#features" className="hover:text-white transition-colors">Platform</a>
           <a href="/pricing" className="hover:text-white transition-colors">Enterprise</a>
         </div>
-        <a href="mailto:support@wardenre.com?subject=WardenRe%20Demo%20Request" className="px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-slate-200 transition-all flex items-center justify-center">
-          Book Demo
+        <a href="#waitlist" className="px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-slate-200 transition-all flex items-center justify-center">
+          Request Access
         </a>
       </nav>
 
@@ -36,7 +38,6 @@ export default function WardenReHome() {
             Next-Gen Identity Defense
           </span>
           
-          {/* THE NEW PROPRIETARY BADGE */}
           <div className="mb-8">
             <span className="px-4 py-2 rounded-md bg-white/10 text-white text-sm font-bold tracking-wide border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] inline-flex items-center gap-2">
               <Shield size={14} className="text-cyan-400" />
@@ -50,18 +51,17 @@ export default function WardenReHome() {
               Modern Identities.
             </span>
           </h1>
-          <p className="text-slate-400 text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-slate-400 text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
             Stop identity injection and deepfake fraud before they reach your infrastructure. 
             Automated legal takedowns and real-time perimeter protection.
           </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="/pricing" className="px-8 py-4 bg-cyan-500 text-black font-bold rounded-xl hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all flex items-center justify-center">
-              View Pricing
-            </a>
-            <a href="mailto:support@wardenre.com?subject=Early%20Access%20Inquiry" className="px-8 py-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-all backdrop-blur-sm flex items-center justify-center">
-              Contact Sales
-            </a>
+          
+          {/* THE NEW WAITLIST FORM IS PLACED HERE */}
+          <div id="waitlist" className="bg-white/5 p-8 rounded-2xl border border-white/10 max-w-xl mx-auto shadow-2xl backdrop-blur-sm">
+            <h2 className="text-2xl font-bold mb-6">Secure Your Access</h2>
+            <WaitlistForm />
           </div>
+
         </motion.div>
       </section>
 
@@ -90,7 +90,7 @@ export default function WardenReHome() {
         </div>
       </section>
 
-      {/* Leadership Section - NO LINKEDIN */}
+      {/* Leadership Section */}
       <section className="py-20 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center px-8">
           <h3 className="text-2xl font-bold mb-6">Leadership</h3>
